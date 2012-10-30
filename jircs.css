@@ -1,61 +1,154 @@
+/* ideally remove html before deploying, it's just handy for testing */
+
+html {
+    background-color: #233EA2;
+}
+
 /* The major elements */
+
 .jircs_main {
     width: 100%;
 }
+
 .jircs_tabbar {
-    background-color: #AAA;
+    background-color: #5F5F5F;
     border-radius: 5px 5px 0px 0px;
+    border: 3px solid #FFF;
+    border-bottom-width: 0px;
 }
+
 .jircs_topic {
     font-size: 0.8em;
+    background-color: #95562B;
+    border: 3px solid #FFF;
+    padding-left: 3px;
+    padding-right: 3px;
 }
+
+.jircs_topic a {
+    color: #FCE121;
+}
+
+.jircs_topic a:visited {
+    color: #DE9521;
+}
+
+.jircs_topic a:hover {
+    color: #000;
+    background-color: #FCE121;
+}
+
 .jircs_topic_message {
+    font-family: Arial, Helvetica, "Liberation Sans", "Nimbus Sans L", FreeSans, sans-serif;
+    color: #FFF;
 }
+
 .jircs_topic_creator {
+    font-family: Arial, Helvetica, "Liberation Sans", "Nimbus Sans L", FreeSans, sans-serif;
+    color: #FFF;
     text-align: right;
 }
+
 .jircs_window {
+    background-color: #FFF;
+    border-left: 3px solid #FFF;
 }
+
 .jirc_chat {
 }
+
 .jircs_messages {
 }
+
 .jircs_notificiation {
 }
+
 .jircs_userlist {
+    background-color: #EADDD5;
 }
+
+.jircs_userlist_user {
+    border-bottom: 1px solid #D5BBAA;
+}
+
 .jircs_inputbar {
+    background-color: #5F5F5F;
+    color: #FFF;
+    border: 3px solid #FFF;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    padding-left: 3px;
 }
+
 .jircs_form {
 }
+
 .jircs_name {
 }
+
 .jircs_input {
 }
+
 .jircs_send {
 }
+
 .jircs_status {
+    font-family: Arial, Helvetica, "Liberation Sans", "Nimbus Sans L", FreeSans, sans-serif;
+    font-size: 0.8em;
+    background-color: #5F5F5F;
+    color: #FFF;
+    border: 3px solid #FFF;
+    border-top-width: 0px;
+    border-bottom-width: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 3px;
 }
+
+.jircs_status_special {
+}
+
+.jircs_status_special a {
+    color: #FFF;
+}
+
+.jircs_status_special a:hover {
+    background-color: #FFF;
+    color: #000;
+}
+
 /* Chat messages */
+
 .jircs_chatRow {
     border-bottom: 1px solid gray;
 }
+
 .jircs_chatDate {
 }
+
 .jircs_chatUser {
+    text-align: right;
 }
+
 .jircs_chatText {
+    padding-left: 3px;
+    border-left: 1px solid #808080;
 }
+
 .jircs_hilight {
     color: red;
 }
+
 .jircs_action {
     font-style: italic;
 }
+
 .jircs_event {
     font-style: italic;
 }
+
 /* Tab styling */
+
 .jircs_tab {
     color: #222;
     background-color: #CCC;
@@ -66,28 +159,36 @@
     padding-left: 10px;
     padding-right: 15px;
 }
+
 .jircs_tab:hover {
     background-color: #DDD;
 }
+
 .jircs_tab_active {
     color: #000;
     background-color: #FFF;
 }
-.jircs_tab_active:hover  {
+
+.jircs_tab_active:hover {
     background-color: #FFF;
 }
+
 .jircs_tab_attention {
     background-color: #FFC;
 }
+
 .jircs_tab_attention:hover {
     background-color: #FFD;
 }
+
 .jircs_tab_hilight {
     background-color: #FCC;
 }
+
 .jircs_tab_hilight:hover {
     background-color: #FDD;
 }
+
 .jircs_tab_closeBtn {
     color: #000;
     font-size: 0.6em;
@@ -100,112 +201,149 @@
     border-bottom: 1px solid black;
     border-radius: 0px 0px 0px 5px;
 }
+
 .jircs_tab_closeBtn:hover {
     background-color: Red;
 }
+
 /* Text formatting */
+
 .jircs_bold {
     font-weight: bold;
 }
+
 .jircs_italic {
     font-style: italic;
 }
+
 .jircs_underline {
     text-decoration: underline;
 }
+
 .jircs_color_foreground_0, .jircs_color_foreground_16 {
     color: #FFFFFF;
 }
+
 .jircs_color_foreground_1 {
     color: #000000;
 }
+
 .jircs_color_foreground_2 {
     color: #000080;
 }
+
 .jircs_color_foreground_3 {
     color: #008000;
 }
+
 .jircs_color_foreground_4 {
     color: #FF0000;
 }
+
 .jircs_color_foreground_5 {
     color: #804040;
 }
+
 .jircs_color_foreground_6 {
     color: #8000FF;
 }
+
 .jircs_color_foreground_7 {
     color: #808000;
 }
+
 .jircs_color_foreground_8 {
     color: #FFFF00;
 }
+
 .jircs_color_foreground_9 {
     color: #00FF00;
 }
+
 .jircs_color_foreground_10 {
     color: #008080;
 }
+
 .jircs_color_foreground_11 {
     color: #00FFFF;
 }
+
 .jircs_color_foreground_12 {
     color: #0000FF;
 }
+
 .jircs_color_foreground_13 {
     color: #FF00FF;
 }
+
 .jircs_color_foreground_14 {
     color: #808080;
 }
+
 .jircs_color_foreground_15 {
     color: #C0C0C0;
 }
+
 .jircs_color_background_0, .jircs_color_background_16 {
     background-color: #FFFFFF;
 }
+
 .jircs_color_background_1 {
     background-color: #000000;
 }
+
 .jircs_color_background_2 {
     background-color: #000080;
 }
+
 .jircs_color_background_3 {
     background-color: #008000;
 }
+
 .jircs_color_background_4 {
     background-color: #FF0000;
 }
+
 .jircs_color_background_5 {
     background-color: #804040;
 }
+
 .jircs_color_background_6 {
     background-color: #8000FF;
 }
+
 .jircs_color_background_7 {
     background-color: #808000;
 }
+
 .jircs_color_background_8 {
     background-color: #FFFF00;
 }
+
 .jircs_color_background_9 {
     background-color: #00FF00;
 }
+
 .jircs_color_background_10 {
     background-color: #008080;
 }
+
 .jircs_color_background_11 {
     background-color: #00FFFF;
 }
+
 .jircs_color_background_12 {
     background-color: #0000FF;
 }
+
 .jircs_color_background_13 {
     background-color: #FF00FF;
 }
+
 .jircs_color_background_14 {
     background-color: #808080;
 }
+
 .jircs_color_background_15 {
     background-color: #C0C0C0;
 }
