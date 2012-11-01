@@ -7,6 +7,7 @@ jIRCs.prototype.irc_NICK = function(prefix, args) {
         newNick = args.pop();
     if(oldNick == this.nickname) {
         this.nickname = newNick;
+        allCookies.setItem("jirc-nickname", this.nickname);
     }
     this.forEach(this.channels, function(c, channel) {
         if(c.names && oldNick in c.names) {
@@ -168,9 +169,9 @@ jIRCs.prototype.irc_NOTICE = function(prefix, args) {
             this.renderLine(disobj.viewing, nick, message, disobj);
         }, this);
     }
-    if(prefix == "NickServ") {
-        if(message.slice(0,34) == "You are now identified. Welcome, ") {
-            this.setAccount(message.slice(34,-1));
+    if(this.getNick(prefix) == "NickServ") {
+        if(message.slice(0,33) == "You are now identified. Welcome, ") {
+            this.setAccount(message.slice(33,-1));
         } else if(message.slice(0,22) == "You are now logged out") {
             this.setAccount(false);
         }
@@ -334,9 +335,12 @@ jIRCs.prototype.irc_TOPIC = function(prefix, args) {
 
 jIRCs.prototype.irc_433 = function(prefix, args) {
     this.nickname += "_";
+    allCookies.setItem("jirc-nickname", this.nickname);
     this.send('NICK',[this.nickname]);
 };
 
 jIRCs.prototype.irc_unknown = function(prefix, args) {
+    if(args[0] == this.nickname)
+        args.shift();
     this.renderLine("Status", prefix, args.join(" "));
 };
