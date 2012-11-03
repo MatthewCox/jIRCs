@@ -48,8 +48,10 @@ html {
     color: #FFF;
     text-align: right;
 }
+
 .jircs_auction {
 }
+
 .jircs_window {
     background-color: #FFF;
     border-left: 3px solid #FFF;
@@ -105,36 +107,48 @@ html {
     padding-right: 3px;
     padding-bottom: 3px;
 }
+
 /* Status parts */
+
 .jircs_status_normal {
 }
+
 .jircs_status_connected {
 }
+
 .jircs_status_account {
-}
-.jircs_status_special {
-}
-.jircs_status_hideulist {
-}
-.jircs_status_hideauction {
-}
-/* Auction parts */
-.jircs_auction_image {
-}
-.jircs_auction_title {
-}
-.jircs_auction_bidder {
-}
-.jircs_auction_bid {
-}
-.jircs_auction_form {
-}
-.jircs_auction_input {
-}
-.jircs_auction_submit {
 }
 
 .jircs_status_special {
+}
+
+.jircs_status_hideulist {
+}
+
+.jircs_status_hideauction {
+}
+
+/* Auction parts */
+
+.jircs_auction_image {
+}
+
+.jircs_auction_title {
+}
+
+.jircs_auction_bidder {
+}
+
+.jircs_auction_bid {
+}
+
+.jircs_auction_form {
+}
+
+.jircs_auction_input {
+}
+
+.jircs_auction_submit {
 }
 
 .jircs_status_special a {
@@ -153,9 +167,11 @@ html {
 }
 
 .jircs_chatDate {
+    vertical-align: top;
 }
 
 .jircs_chatUser {
+    vertical-align: top;
     text-align: right;
 }
 
@@ -376,3 +392,4 @@ html {
 .jircs_color_background_15 {
     background-color: #C0C0C0;
 }
+
